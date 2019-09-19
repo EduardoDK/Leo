@@ -2,20 +2,103 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="410dp"
-    android:layout_height="705dp"
-    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal|vertical"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_meus_cupons"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_cupom"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jogar_agora" />
+
+    <Button
+        android:id="@+id/btn_jogar_agora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/btn_jogar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_tempo" />
+
+    <Button
+        android:id="@+id/btn_troca1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/btn_trocar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_troca2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/image_view_cupom1" />
+
+    <Button
+        android:id="@+id/btn_troca2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_trocar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_troca3"
+        app:layout_constraintStart_toEndOf="@+id/btn_troca1"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_cupom2" />
+
+    <Button
+        android:id="@+id/btn_troca3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_trocar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_troca2"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_cupom3" />
+
+    <Button
+        android:id="@+id/btn_troca4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_trocar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_troca5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_cupom4" />
+
+    <Button
+        android:id="@+id/btn_troca5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_trocar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_troca6"
+        app:layout_constraintStart_toEndOf="@+id/btn_troca4"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_cupom5" />
+
+    <Button
+        android:id="@+id/btn_troca6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_trocar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_troca5"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_cupom6" />
 
     <ImageView
         android:id="@+id/image_view_coracao"
@@ -27,6 +110,70 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/coracao" />
 
+    <ImageView
+        android:id="@+id/image_view_cupom1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_cupom2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_meus_cupons"
+        app:srcCompat="@drawable/hamburguer3" />
+
+    <ImageView
+        android:id="@+id/image_view_cupom2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_cupom3"
+        app:layout_constraintStart_toEndOf="@+id/image_view_cupom1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_meus_cupons"
+        app:srcCompat="@drawable/hamburguer3" />
+
+    <ImageView
+        android:id="@+id/image_view_cupom3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_cupom2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_meus_cupons"
+        app:srcCompat="@drawable/hamburguer3" />
+
+    <ImageView
+        android:id="@+id/image_view_cupom4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_cupom5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_troca1"
+        app:srcCompat="@drawable/hamburguer3" />
+
+    <ImageView
+        android:id="@+id/image_view_cupom5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_cupom6"
+        app:layout_constraintStart_toEndOf="@+id/image_view_cupom4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_troca2"
+        app:srcCompat="@drawable/hamburguer3" />
+
+    <ImageView
+        android:id="@+id/image_view_cupom6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_cupom5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_troca3"
+        app:srcCompat="@drawable/hamburguer3" />
+
     <TextView
         android:id="@+id/text_view_vida"
         android:layout_width="wrap_content"
@@ -35,16 +182,21 @@
         android:layout_marginTop="30dp"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorLink="#00FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/text_view_tempo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="30dp"
         android:text="TextView"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/image_view_coracao"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,21 +204,13 @@
         android:id="@+id/text_view_pontos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="8dp"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/text_view_tempo"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
