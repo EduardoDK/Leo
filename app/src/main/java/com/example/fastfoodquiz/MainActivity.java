@@ -2,7 +2,9 @@ package com.example.fastfoodquiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -54,4 +56,14 @@ public class MainActivity extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
     }
+
+    private void jogar(View view){
+
+
+        Intent intent = new Intent(this, perguntas_activity.class);
+        startActivity(intent);
+
+
+    }
+
 }

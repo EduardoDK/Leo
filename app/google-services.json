@@ -1,48 +1,10 @@
 {
   "project_info": {
-    "project_number": "38108584943",
-    "firebase_url": "https://fastfoodquiz-6e65f.firebaseio.com",
-    "project_id": "fastfoodquiz-6e65f",
-    "storage_bucket": "fastfoodquiz-6e65f.appspot.com"
+    "project_number": "831291725493",
+    "firebase_url": "https://fastfoodquiz-74441.firebaseio.com",
+    "project_id": "fastfoodquiz-74441",
+    "storage_bucket": "fastfoodquiz-74441.appspot.com"
   },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:38108584943:android:c65f1eb6517e0f811d741a",
-        "android_client_info": {
-          "package_name": "com.example.fastfoodquiz"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "38108584943-c7gc6vs19da2m86lmnbu1kel6bmgq99r.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.fastfoodquiz",
-            "certificate_hash": "1a31b0178753bb461691b636c91f61d33cc6b513"
-          }
-        },
-        {
-          "client_id": "38108584943-43d50jhg2ct32kv5hrvse6opdehfk74o.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAllYmgUnomWt9y5aWo_TakvC3mDuFUSJg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "38108584943-43d50jhg2ct32kv5hrvse6opdehfk74o.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    }
-  ],
+  "client": [],
   "configuration_version": "1"
 }
